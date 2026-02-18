@@ -277,16 +277,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ClusterVR.CreatorKit.Item.Implements::ClusterVR.CreatorKit.Item.Implements.PlayerScript
   sourceCodeAsset: {fileID: 0}
-  sourceCode: "const airplaneHandle = _.worldItemReference(\"PlaneBody\");\r\n\r\n_.oscHandle.onReceive(messages
-    => {\r\n    if (!airplaneHandle) return;\r\n\r\n    messages.forEach((message)
-    => {\r\n        if (message.address === \"/plane/data\") {\r\n            const
-    v = message.values;\r\n            if (v && v.length >= 3) {\r\n               
-    const roll = v[0].getFloat();\r\n                const pitch = v[1].getFloat();\r\n               
-    const yaw = v[2].getFloat();\r\n\r\n                // \u30ED\u30B0\r\n               
-    _.log(`[Player] Send to PlaneBody: ${roll.toFixed(1)}`);\r\n                \r\n               
-    // \u30A2\u30A4\u30C6\u30E0\u3078\u9001\u4FE1\r\n                _.sendTo(airplaneHandle,
-    \"updateRotation\", [roll, pitch, yaw]);\r\n            }\r\n        }\r\n   
-    });\r\n});"
+  sourceCode: "const airplaneHandle = _.worldItemReference(\"PlaneBody\");\r\n\tif
+    (airplaneHandle) {\n\t    _.sendTo(airplaneHandle, \"updateRotation\", [0, 0,
+    0]);\n\t}\r\n_.oscHandle.onReceive(messages => {\r\n    if (!airplaneHandle)
+    return;\r\n\r\n    messages.forEach((message) => {\r\n        if (message.address
+    === \"/plane/data\") {\r\n            const v = message.values;\r\n           
+    if (v && v.length >= 3) {\r\n                const roll = v[0].getFloat();\r\n               
+    const pitch = v[1].getFloat();\r\n                const yaw = v[2].getFloat();\r\n\r\n               
+    // \u30ED\u30B0\r\n                _.log(`[Player] Send to PlaneBody: ${roll.toFixed(1)}`);\r\n               
+    \r\n                // \u30A2\u30A4\u30C6\u30E0\u3078\u9001\u4FE1\r\n               
+    _.sendTo(airplaneHandle, \"updateRotation\", [roll, pitch, yaw]);\r\n           
+    }\r\n        }\r\n    });\r\n});"
 --- !u!114 &2186574
 MonoBehaviour:
   m_ObjectHideFlags: 0
