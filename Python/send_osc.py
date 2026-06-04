@@ -4,7 +4,7 @@ import time
 import sys
 
 CSV_FILE = 'flight_data.csv' 
-IP = "10.227.81.102"
+IP = "127.0.0.1"
 PORT = 9000
 FPS = 50
 INTERVAL = 1.0 / FPS
