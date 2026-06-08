@@ -43,6 +43,24 @@ FPS = 50                       # 送信レート（回/秒）
    ```
 5. コンソールに「送信開始」「送信完了」が表示されれば正常終了です。`Ctrl+C` で途中停止できます。
 
+## 受信する際の設定
+- Cluster から送信される OSC アドレスは `/plane/control` で、`[aileron, elevator, rudder]` を配列で受け取ります。
+- 受信確認用コード
+```python
+from pythonosc import dispatcher, osc_server
+
+def handler(address, *args):
+    print(f"{address}: {args}")
+
+d = dispatcher.Dispatcher()
+d.set_default_handler(handler)
+
+server = osc_server.ThreadingOSCUDPServer(("0.0.0.0", 9001), d)
+print("受信待機中... 0.0.0.0:9001")
+server.serve_forever()
+```
+- 受信する際にはCluster側で送信の有効化と送信先を指定してください
+   
 ## Unity 連携メモ
 - Unity 側で OSC を受信できる状態にし、上記 IP/PORT を一致させてください。
 - Cluster Creator Kit 環境の説明は `Unity/osc-flight-telemetry/README.md` を参照してください。
