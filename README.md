@@ -3,6 +3,9 @@
 Unity 上の機体モデルへ CSV のフライトデータを OSC でストリーミングするためのプロジェクトです。  
 Python スクリプトでテレメトリを送信し、`Unity/osc-flight-telemetry` で受信・可視化します。
 
+## 対応ワールド
+https://cluster.mu/e/36d967fc-7f3d-427c-9bcb-dc1a54c6d753
+
 ## リポジトリ構成
 - `Python/` : CSV を読み込み OSC 送信するスクリプトとサンプルデータ
 - `Unity/osc-flight-telemetry/` : Cluster Creator Kit テンプレートをベースにした Unity プロジェクト
