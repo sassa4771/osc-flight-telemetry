@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8667523601583417197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5442536650578756209}
+  - component: {fileID: 5180389721580842079}
+  - component: {fileID: 3831063837194418589}
+  - component: {fileID: 8311795670920671231}
+  - component: {fileID: 1942120521289323265}
+  - component: {fileID: 4495696638939273378}
+  - component: {fileID: 1833349987150326893}
+  - component: {fileID: 3183799017816956153}
+  - component: {fileID: 442929261104034301}
+  m_Layer: 0
+  m_Name: ControllerItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5442536650578756209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.08, y: 1.8, z: 2.95281}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5180389721580842079
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3831063837194418589
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8311795670920671231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1942120521289323265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3977a5e65e72f4db4b85ddba10d48dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ClusterVR.CreatorKit.Item.Implements::ClusterVR.CreatorKit.Item.Implements.Item
+  id:
+    value: 17302843029851538559
+  itemName: 
+  size: {x: 0, y: 0, z: 0}
+--- !u!114 &4495696638939273378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61061896c654489a41575fc291bf4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ClusterVR.CreatorKit.Item.Implements::ClusterVR.CreatorKit.Item.Implements.ScriptableItem
+  sourceCodeAsset: {fileID: 0}
+  sourceCode: "let currentOwner = null;\r\n\r\nfunction activateOwner(owner) {\r\n 
+    if (owner === null) return;\r\n\r\n  $.log(\"activateOwner: \" + owner.id);\r\n 
+    $.setPlayerScript(owner);\r\n  owner.send(\"setOscActive\", true);\r\n}\r\n\r\nfunction
+    deactivateOwner(owner) {\r\n  if (owner === null) return;\r\n\r\n  $.log(\"deactivateOwner:
+    \" + owner.id);\r\n  owner.send(\"setOscActive\", false);\r\n}\r\n\r\n$.onInteract((player)
+    => {\r\n  $.log(\"ControllerItem interacted by: \" + player.id);\r\n  $.requestOwner(player);\r\n});\r\n\r\n$.onStart(()
+    => {\r\n  const owner = $.getOwner();\r\n  if (owner !== null) {\r\n    currentOwner
+    = owner;\r\n    activateOwner(owner);\r\n  }\r\n});\r\n\r\n$.onUpdate(() => {\r\n 
+    const owner = $.getOwner();\r\n  if (owner === null) return;\r\n\r\n  if (currentOwner
+    !== null && currentOwner.id === owner.id) return;\r\n\r\n  if (currentOwner !==
+    null) {\r\n    deactivateOwner(currentOwner);\r\n  }\r\n\r\n  currentOwner =
+    owner;\r\n  activateOwner(owner);\r\n});"
+--- !u!114 &1833349987150326893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb59730322447a7a13c40b87493e196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ClusterVR.CreatorKit.Item.Implements::ClusterVR.CreatorKit.Item.Implements.PlayerScript
+  sourceCodeAsset: {fileID: 0}
+  sourceCode: "const aileronSliderObj = _.playerLocalObject(\"aileronSlider\");\r\nconst
+    elevatorSliderObj = _.playerLocalObject(\"elevatorSlider\");\r\nconst rudderSliderObj
+    = _.playerLocalObject(\"rudderSlider\");\r\n\r\nconst rotateTargetId = _.worldItemReference(\"rotateTarget\");\r\n\r\nlet
+    initialized = false;\r\nlet oscActive = false;\r\nlet timer = 0;\r\n\r\nlet lastAileron
+    = null;\r\nlet lastElevator = null;\r\nlet lastRudder = null;\r\n\r\n_.onReceive((messageType,
+    arg, sender) => {\r\n  if (messageType === \"setOscActive\") {\r\n    oscActive
+    = !!arg;\r\n    _.log(\"setOscActive = \" + oscActive);\r\n    return;\r\n  }\r\n\r\n 
+    if (messageType === \"rotAileron\" && arg) {\r\n    _.log(\"received rotAileron\");\r\n   
+    if (_.oscHandle.isSendEnabled()) {\r\n      _.oscHandle.send(new OscMessage(\"/plane/aileron/quat\",
+    [\r\n        OscValue.float(arg.x),\r\n        OscValue.float(arg.y),\r\n       
+    OscValue.float(arg.z),\r\n        OscValue.float(arg.w),\r\n      ]));\r\n   
+    }\r\n    return;\r\n  }\r\n\r\n  if (messageType === \"rotElevator\" && arg)
+    {\r\n    _.log(\"received rotElevator\");\r\n    if (_.oscHandle.isSendEnabled())
+    {\r\n      _.oscHandle.send(new OscMessage(\"/plane/elevator/quat\", [\r\n       
+    OscValue.float(arg.x),\r\n        OscValue.float(arg.y),\r\n        OscValue.float(arg.z),\r\n       
+    OscValue.float(arg.w),\r\n      ]));\r\n    }\r\n    return;\r\n  }\r\n\r\n 
+    if (messageType === \"rotRudder\" && arg) {\r\n    _.log(\"received rotRudder\");\r\n   
+    if (_.oscHandle.isSendEnabled()) {\r\n      _.oscHandle.send(new OscMessage(\"/plane/rudder/quat\",
+    [\r\n        OscValue.float(arg.x),\r\n        OscValue.float(arg.y),\r\n       
+    OscValue.float(arg.z),\r\n        OscValue.float(arg.w),\r\n      ]));\r\n   
+    }\r\n    return;\r\n  }\r\n}, { item: true, player: true });\r\n\r\n_.onFrame((dt)
+    => {\r\n  if (!initialized) {\r\n    initialized = true;\r\n    _.log(\"PlayerScript
+    initialized\");\r\n    _.log(\"aileronSliderObj = \" + (aileronSliderObj !==
+    null));\r\n    _.log(\"elevatorSliderObj = \" + (elevatorSliderObj !== null));\r\n   
+    _.log(\"rudderSliderObj = \" + (rudderSliderObj !== null));\r\n    _.log(\"rotateTargetId
+    = \" + rotateTargetId);\r\n  }\r\n\r\n  if (!oscActive) return;\r\n\r\n  timer
+    += dt;\r\n  if (timer < 0.05) return;\r\n  timer = 0;\r\n\r\n  if (aileronSliderObj
+    !== null) {\r\n    const slider = aileronSliderObj.getUnityComponent(\"Slider\");\r\n   
+    if (slider !== null) {\r\n      const v = slider.unityProp.value;\r\n      if
+    (lastAileron === null || Math.abs(v - lastAileron) > 0.001) {\r\n        lastAileron
+    = v;\r\n        _.log(\"send setAileron = \" + v);\r\n        _.sendTo(rotateTargetId,
+    \"setAileron\", v);\r\n      }\r\n    }\r\n  }\r\n\r\n  if (elevatorSliderObj
+    !== null) {\r\n    const slider = elevatorSliderObj.getUnityComponent(\"Slider\");\r\n   
+    if (slider !== null) {\r\n      const v = slider.unityProp.value;\r\n      if
+    (lastElevator === null || Math.abs(v - lastElevator) > 0.001) {\r\n        lastElevator
+    = v;\r\n        _.log(\"send setElevator = \" + v);\r\n        _.sendTo(rotateTargetId,
+    \"setElevator\", v);\r\n      }\r\n    }\r\n  }\r\n\r\n  if (rudderSliderObj
+    !== null) {\r\n    const slider = rudderSliderObj.getUnityComponent(\"Slider\");\r\n   
+    if (slider !== null) {\r\n      const v = slider.unityProp.value;\r\n      if
+    (lastRudder === null || Math.abs(v - lastRudder) > 0.001) {\r\n        lastRudder
+    = v;\r\n        _.log(\"send setRudder = \" + v);\r\n        _.sendTo(rotateTargetId,
+    \"setRudder\", v);\r\n      }\r\n    }\r\n  }\r\n});"
+--- !u!114 &3183799017816956153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49554f6eafb04d538a589436719e8fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ClusterVR.CreatorKit.Item.Implements::ClusterVR.CreatorKit.Item.Implements.WorldItemReferenceList
+  worldItemReferences:
+  - id: aircraftRoot
+    item: {fileID: 0}
+--- !u!114 &442929261104034301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667523601583417197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd9621be6e91bb4e8cbb9d98d3c28f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ClusterVR.CreatorKit.Item.Implements::ClusterVR.CreatorKit.Item.Implements.PlayerLocalObjectReferenceList
+  playerLocalObjectReferences:
+  - id: aileronSlider
+    targetObject: {fileID: 0}
+  - id: rudderTarget
+    targetObject: {fileID: 0}
+  - id: elevatorTarget
+    targetObject: {fileID: 0}
